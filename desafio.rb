@@ -65,7 +65,7 @@ def convertF
 end
 
 def convertC
-	puts "Dame Celsius"
+	puts "Dame FAHRENHEIT"
 	f=gets.chomp.to_i
 
 	c = (f - 32.00) / 1.8000
