@@ -26,11 +26,20 @@ def mayor3Numeros
 	end
 
 	puts "El mayor es: #{max}"
-
 end	
 
 def dameLongitud
-	puts "2"
+	puts "Dame una cadena de longitud 5 o mas:"
+	cadena = gets.chomp.to_s.length
+
+	if cadena<5
+		puts "La cadena debe tener por lo menos 5 caracteres"
+	elsif cadena==5
+		puts "Gracias"
+	else
+		puts "La longitud es de #{cadena}"
+	end
+
 end
 
 def presentate
