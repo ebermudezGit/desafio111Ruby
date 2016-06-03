@@ -48,11 +48,41 @@ def presentate
 	puts "Dame tu Edad"
 	edad = gets.chomp.to_s
 
-	puts "Tu nombre es #{nombre} y tu edad es #{edad}"
+	puts "Tu nombre es #{nombre} y tu edad es #{edad}"	
+end
+
+def menuTemperatura
+	puts "Elige una opción"
+	puts "1.- FAHRENHEIT"
+	puts "2.- Celsius"
+end
+
+def convertF
+	puts "Dame Celsius"
+	gets c.chomp.to_i
+
+	f =c * 1.8000 + 32.00
+end
+
+def convertC
+	puts "Dame Celsius"
+	gets f.chomp.to_i
+
+	c = (f - 32.00) / 1.8000
 end
 
 def convertirTemperatura
-	puts "4"
+	menuTemperatura
+	op2 = gets.chomp.to_i
+
+	case op2
+	when 1
+		puts "Resultado " + convertF.to_s
+	when 2
+		puts "Resultado " + convertC.to_s
+	else
+		puts "Opcion no Valida"
+	end
 end
 
 
