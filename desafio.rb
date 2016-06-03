@@ -59,14 +59,14 @@ end
 
 def convertF
 	puts "Dame Celsius"
-	gets c.chomp.to_i
+	c= gets.chomp.to_i
 
-	f =c * 1.8000 + 32.00
+	f = c * 1.8000 + 32.00
 end
 
 def convertC
 	puts "Dame Celsius"
-	gets f.chomp.to_i
+	f=gets.chomp.to_i
 
 	c = (f - 32.00) / 1.8000
 end
