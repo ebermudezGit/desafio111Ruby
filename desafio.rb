@@ -1,6 +1,5 @@
 #Script de Ruby
 
-
 def imprimeMenu
 	puts "Elige una opción"
 	puts "1.- mayor 3 números"
@@ -9,8 +8,28 @@ def imprimeMenu
 	puts "4.- convertidor temperaturas"
 end
 
+def mayor3Numeros
+	puts "1"
+end	
+
+def dameLongitud
+	puts "2"
+end
+
+def presentate
+	puts "3"
+end
+
+def convertirTemperatura
+	puts "4"
+end
+
+
+
 imprimeMenu
+
 op = gets.chomp.to_i
+
 case op
 when 1
 	mayor3Numeros
@@ -23,3 +42,4 @@ when 4
 else
 	puts "Opcion no Valida"
 end
+
