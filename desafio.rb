@@ -9,7 +9,24 @@ def imprimeMenu
 end
 
 def mayor3Numeros
-	puts "1"
+	puts "Primer Numero:"
+	num1=gets.chomp.to_i
+	puts "Segundo Numero:"
+	num2=gets.chomp.to_i
+	puts "Tercer Numero:"
+	num3=gets.chomp.to_i
+
+	max=num1
+
+	if num2>max
+		max=num2
+	end
+	if num3>max
+		max=num3
+	end
+
+	puts "El mayor es: #{max}"
+
 end	
 
 def dameLongitud
