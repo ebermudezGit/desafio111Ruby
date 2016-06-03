@@ -43,7 +43,12 @@ def dameLongitud
 end
 
 def presentate
-	puts "3"
+	puts "Dame tu nombre:"
+	nombre = gets.chomp.to_s
+	puts "Dame tu Edad"
+	edad = gets.chomp.to_s
+
+	puts "Tu nombre es #{nombre} y tu edad es #{edad}"
 end
 
 def convertirTemperatura
